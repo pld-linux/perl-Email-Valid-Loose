@@ -5,8 +5,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Email
 %define	pnam	Valid-Loose
-Summary:	Email::Valid::Loose - Email::Valid which allows dot before at mark
-#Summary(pl):	
+Summary:	Email::Valid::Loose - Email::Valid which allows dot before @ mark
+Summary(pl):	Email::Valid::Loose - Email::Valid zezwalaj±cy na kropkê przed znakiem @
 Name:		perl-Email-Valid-Loose
 Version:	0.02
 Release:	1
@@ -25,12 +25,16 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Email::Valid::Loose is a subclass of Email::Valid, which allows . (dot)
-before @ (at-mark).  It is invalid in RFC822, but is commonly used in
-some of mobile phone addresses in Japan (like docomo.ne.jp or jp-t.ne.jp).
+Email::Valid::Loose is a subclass of Email::Valid, which allows .
+(dot) before @ (at-mark). It is invalid in RFC822, but is commonly
+used in some of mobile phone addresses in Japan (like docomo.ne.jp or
+jp-t.ne.jp).
 
-# %description -l pl
-# TODO
+%description -l pl
+Email::Valid::Loose to podklasa Email::Valid zezwalaj±ca na . (kropkê)
+przed @ (znakiem "at"). Jest to niepoprawne wg RFC822, ale powszechnie
+u¿ywane w niektórych adresach telefonów komórkowych w Japonii (na
+przyk³ad docomo.ne.jp lub jp-t.ne.jp).
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
@@ -54,5 +58,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes
+%dir %{perl_vendorlib}/Email/Valid
 %{perl_vendorlib}/Email/Valid/*.pm
 %{_mandir}/man3/*
