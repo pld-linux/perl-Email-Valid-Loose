@@ -6,7 +6,7 @@
 %define		pdir	Email
 %define		pnam	Valid-Loose
 Summary:	Email::Valid::Loose - Email::Valid which allows dot before @ mark
-Summary(pl):	Email::Valid::Loose - Email::Valid zezwalaj±cy na kropkê przed znakiem @
+Summary(pl.UTF-8):   Email::Valid::Loose - Email::Valid zezwalajÄ…cy na kropkÄ™ przed znakiem @
 Name:		perl-Email-Valid-Loose
 Version:	0.04
 Release:	1
@@ -30,11 +30,11 @@ Email::Valid::Loose is a subclass of Email::Valid, which allows .
 used in some of mobile phone addresses in Japan (like docomo.ne.jp or
 jp-t.ne.jp).
 
-%description -l pl
-Email::Valid::Loose to podklasa Email::Valid zezwalaj±ca na . (kropkê)
+%description -l pl.UTF-8
+Email::Valid::Loose to podklasa Email::Valid zezwalajÄ…ca na . (kropkÄ™)
 przed @ (znakiem "at"). Jest to niepoprawne wg RFC822, ale powszechnie
-u¿ywane w niektórych adresach telefonów komórkowych w Japonii (na
-przyk³ad docomo.ne.jp lub jp-t.ne.jp).
+uÅ¼ywane w niektÃ³rych adresach telefonÃ³w komÃ³rkowych w Japonii (na
+przykÅ‚ad docomo.ne.jp lub jp-t.ne.jp).
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
