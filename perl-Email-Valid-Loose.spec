@@ -9,7 +9,7 @@ Summary:	Email::Valid::Loose - Email::Valid which allows dot before @ mark
 Summary(pl.UTF-8):	Email::Valid::Loose - Email::Valid zezwalający na kropkę przed znakiem @
 Name:		perl-Email-Valid-Loose
 Version:	0.04
-Release:	1
+Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
