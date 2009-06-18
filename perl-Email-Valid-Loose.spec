@@ -8,18 +8,18 @@
 Summary:	Email::Valid::Loose - Email::Valid which allows dot before @ mark
 Summary(pl.UTF-8):	Email::Valid::Loose - Email::Valid zezwalający na kropkę przed znakiem @
 Name:		perl-Email-Valid-Loose
-Version:	0.04
-Release:	2
+Version:	0.05
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	5a9893651ffb6af6d37f42caa0f49e03
+# Source0-md5:	06fec4697ef1c29c8e480e692175639a
+URL:		http://search.cpan.org/dist/Email-Valid-Loose/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
-BuildRequires:	perl-Email-Valid
-BuildRequires:	perl-Test-Simple
+BuildRequires:	perl-Email-Valid >= 0.17
 %endif
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
